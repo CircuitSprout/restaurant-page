@@ -17,22 +17,32 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/template.html",
-
+            filename: "index.html", // Output file name
         }),
     ],
     module: {
         rules: [
             {
-                test: /\.css$/,
+                test: /\.js$/i, // Apply Babel to JavaScript files
+                exclude: /node_modules/, // Exclude node_modules
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["@babel/preset-env"], // Use the preset-env preset
+                    },
+                },
+            },
+            {
+                test: /\.css$/i, // Handle CSS files
                 use: ["style-loader", "css-loader"],
             },
             {
-                test: /\.(png|jpe?g|gif|svg)$/i,
-                type: "asset/resource",
+                test: /\.html$/i, // Handle HTML files
+                loader: "html-loader",
             },
             {
-                test: /\.html$/,
-                loader: "html-loader",
+                test: /\.(png|svg|jpg|jpeg|gif)$/i, // Handle image files
+                type: "asset/resource",
             },
         ],
     },

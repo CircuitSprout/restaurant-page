@@ -3,20 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cedarville+Cursive&family=Londrina+Outline&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="609a232ab53e413e38d2.css">
+    <title>Mayari's Morsels</title>
     <script defer src="main.js"></script></head>
     <body>
+        <div class="bodyContainer">
+        <h1 class="titleCard">Welcome to Our Cafe!</h1>
+        <div id="content"></div>
         <header>
             <nav>
-                <ul>
+                <ul class="navGrid">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <h1>Welcome to Our Restaurant</h1>
-        <div id="content"></div>
+        <div class="cardContainer">
+            <section class="secondCard">
+                <h3 class="treatText">Discover the best treats in town!</h3>
+                <p>At Mayari's Morsels, we pride ourselves on using the freshest ingredients to create delicious and unique treats. Whether you're in the mood for a sweet pastry or a savory snack, we have something for everyone.</p>
+                <p>Our menu features a variety of options, from classic favorites to innovative new creations. We also offer vegan and gluten-free options to accommodate all dietary needs.</p>    
+            </section>
+            <form class="formCard" action="https://example.com/submit" method="POST">
+                <h3 class="contactCard">Contact Us</h3>
+                <p>If you have any questions, comments, or interest in catering orders, go ahead and fill out the form below with your information and we will reach back out as soon as possible.</p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                <button type="submit">Submit</button>
+                <p>We look forward to hearing from you!</p>
+            </form>
+        </div>
+        <footer>
+            Join us on these different platforms:
+            <ul class="socialMedia">
+                <li><a href="https://www.instagram.com" target="_blank">
+                    <img src="80e598d8df0c0a94d580.png" alt="Instagram Logo" class="social-icon">
+                </a></li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                <img src="f4dc2d6902d8b5c2cc4d.png" alt="Facebook Logo" class="social-icon">
+                </a>
+                </li>
+                <li><a href="https://www.x.com" target="_blank">
+                    <img src="c4075d6ff50d6ded45df.png" alt="X Logo" class="social-icon">
+                </a></li>
+        </footer>
+    </div>
     </body>
 </html>

@@ -1,5 +1,5 @@
 function loadContactPage() {
-    const content = document.getElementById('content');
+    const content = document.getElementById("content");
     content.innerHTML = '';
 
     const headline = document.createElement("h2");

@@ -1,27 +1,28 @@
 import './styles.css';
 import loadHomePage from './home.js';
 import loadMenuPage from './menu.js';
-import loadContactPage from './contact.js';
+import loadAboutPage from './about.js';
 
 function setActiveTab(activeLink) {
     const navLinks = document.querySelectorAll("nav a");
     navLinks.forEach(link => link.classList.remove("active"));
     activeLink.classList.add("active");
 }
-    homeLink.addEventListener('click', (e) => {
+    document.querySelector('a[href="#home"]').addEventListener('click', (e) => {
+        e.preventDefault();
         setActiveTab(e.target);
         loadHomePage();
     });
-    menuLink.addEventListener('click', (e) => {
+    document.querySelector('a[href="#menu"]').addEventListener('click', (e) => {
+        e.preventDefault();
         setActiveTab(e.target);
         loadMenuPage();
     });
-    contactLink.addEventListener('click', (e) => {
+    document.querySelector('a[href="#about"]').addEventListener('click', (e) => {
+        e.preventDefault();
         setActiveTab(e.target);
-        loadContactPage();
+        loadAboutPage();
     });
-
 
 //Initialize the page
 loadHomePage();
-addNavListeners();

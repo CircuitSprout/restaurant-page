@@ -1,6 +1,6 @@
 function loadMenuPage() {
     const content = document.getElementById("content");
-    content.innerHTML = ""; // Clear existing content
+    content.innerHTML = ''; // Clear existing content
 
     const headline = document.createElement("h2")
     headline.textContent = "Our Menu";

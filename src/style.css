@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+.bodyContainer{
+    position: relative;
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: url("./images/bakeryback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+nav a.active {
+    font-weight: bold;
+    color: #ff6347;
+}
+.titleCard {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', sans-serif, cursive;
+    font-size: 2.5rem;
+    color: #765c54;
+    box-shadow: 0 1px 0 rgb(239, 213, 184);
+    width: fit-content;
+    margin: 0 auto;
+}
+.navGrid {
+    container: content-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px;
+    font-family: 'Pacifico', sans-serif;
+    box-shadow: 0 1px 0 rgb(152, 129, 96);
+    width: fit-content;
+    margin: 0 auto;
+}
+.secondCard {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.secondCard h3 {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 2rem;
+    color: #765c54;
+}
+.secondCard p {
+    font-size: 0.8rem;
+    color: #000000;
+    margin: 0 20px;
+    padding: 0 0 20px 0;
+}
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three columns for the cards */
+    gap: 20px; /* Add spacing between the cards */
+    margin: 20px;
+}
+.secondCard, .formCard {
+    width: 100%;
+}
+.formCard {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    container-type: content-box;
+    box-shadow: 2px 2px 2px 3px rgb(152, 129, 96);
+    padding: 0 10px;
+}
+.formCard > p {
+    font-size: 0.8rem;
+}
+section > p {
+    font-size: 0.8rem;
+    grid-template-rows: repeat(2, 1fr);
+    color: #000000;
+    margin: 0 20px 0 20px;
+}
+@media (max-width: 768px) {
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.contactCard{
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 1rem;
+    color: #765c54;
+    text-align: center;
+}
+.social-icon{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
